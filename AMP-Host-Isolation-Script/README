@@ -3,3 +3,5 @@ Populate the client_id and api_key variables
 Usage "python isolate-host.py {ip address}"
 un-remark the action lines to isolate host or un-isolate host
 You will need read/write access on the client_id and api_key
+You will need to use the Endpoint Isolation Group Connector on the host
+

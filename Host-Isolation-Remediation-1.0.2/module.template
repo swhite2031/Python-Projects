@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?meta name="GENERATOR" content="XML::Smart/1.6.9 Perl/5.010001 [linux]" ?>
+<module name="Host_Isolation">
+  <global_config>
+    <display_name>AMP Host Isolation</display_name>
+    <description>AMP Host Isolation Module</description>
+    <version>1.0.2</version>
+    <binary>isolate-host.py</binary>
+  </global_config>
+  <config_template online_help="topic://EditInstance">
+    <string>
+      <name>client_id</name>
+      <display_name>AMP Client ID</display_name>
+    </string>
+    <string>
+      <name>api_key</name>
+      <display_name>AMP API key</display_name>
+    </string>
+  </config_template>
+  <remediation_type name="Isolate">
+    <display_name>Isolate a Host </display_name>
+    <policy_event_data>
+      <pe_item>src_ip_addr</pe_item>
+    </policy_event_data>
+    <config_template online_help="topic://RemediationEdit"/>
+  </remediation_type>
+
+</module>

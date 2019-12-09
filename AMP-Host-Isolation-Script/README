@@ -1,0 +1,5 @@
+@Author Steven White stewhit2@cisco.com
+Populate the client_id and api_key variables
+Usage "python isolate-host.py {ip address}"
+un-remark the action lines to isolate host or un-isolate host
+You will need read/write access on the client_id and api_key

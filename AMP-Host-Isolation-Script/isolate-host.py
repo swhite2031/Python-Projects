@@ -4,17 +4,16 @@ import json
 import urllib2
 import requests
 import socket
-
 '''
 @Author Steven White stewhit2@cisco.com
 Populate the client_id and api_key variables
 Usage "python isolate-host.py {ip address}"
-un-remark the url2 and action lines to isolate host or un-isolate host
+un-remark the action lines to isolate host or un-isolate host
 You will need read/write access on the client_id and api_key
 '''
 
-client_id = "39d7224d7cca78f496a7"
-api_key = "85b1da75-19f1-4bae-bdc3-1cfe7ac2eef1"
+client_id = " "
+api_key = " "
 
 ip = sys.argv[1]
 url1 = ("https://api.amp.cisco.com/v1/computers?internal_ip={}".format(ip))

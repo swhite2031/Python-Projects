@@ -39,3 +39,16 @@ with open("./top/top-1m.csv", "rt") as source:
         for r in rdr:
             del r[0]
             wtr.writerow(r)
+
+filed = open("{}".format(progpath) + "/logs/{}".format(yesterday) + ".csv", "r")
+linelist = filed.readlines()
+filed.close
+
+filef = open("{}".format(progpath) + "/logs/{}".format(yesterday) + ".csv", "w")
+
+for line in linelist:
+    line = line.replace("(", "")
+    line = line.replace(")", "")
+    filef.write(line)
+
+filef.close
